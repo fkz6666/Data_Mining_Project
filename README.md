@@ -1,39 +1,35 @@
-# Olympic Medal Prediction (2028 Los Angeles Games)
+# Olympic Medal Prediction (2028 Los Angeles Games) 🏅
 
 ## Project Overview
 The Olympic Games represent the pinnacle of international sports competition, with over 200 nations participating and billions of viewers worldwide. Medal predictions have become increasingly important for:
-- National sports agencies allocating training resources
-- Media outlets preparing coverage
-- Betting markets setting odds
-- Host cities planning logistics
 
-This project develops a machine learning solution to predict medal counts (gold, silver, bronze) for the 2028 Summer Olympics in Los Angeles using comprehensive historical data from 2000-2024. Our hybrid approach combines time-series analysis with ensemble modeling to deliver accurate national performance forecasts.
+📊 National sports agencies allocating training resources  
+📺 Media outlets preparing coverage  
+🎲 Betting markets setting odds  
+🏟️ Host cities planning logistics
+
+This project develops a machine learning solution to predict medal counts for the 2028 Summer Olympics in Los Angeles using comprehensive historical data from 2000-2024.
 
 ## Key Findings (Top 5 Predictions)
-| Country        | Gold | Silver | Bronze | Total |
-|----------------|------|--------|--------|-------|
-| United States  | 43   | 35     | 35     | 113   |
-| China          | 33   | 27     | 26     | 86    |
-| Great Britain  | 26   | 21     | 20     | 67    |
-| Japan          | 16   | 14     | 15     | 45    |
-| Germany        | 13   | 12     | 13     | 38    |
+| Rank | Country        | Gold | Silver | Bronze | Total | Trend |
+|------|----------------|------|--------|--------|-------|-------|
+| 1️⃣ | United States  | 43   | 35     | 35     | 113   | 📈 |
+| 2️⃣ | China          | 33   | 27     | 26     | 86    | 📈 |
+| 3️⃣ | Great Britain  | 26   | 21     | 20     | 67    | ➡️ |
+| 4️⃣ | Japan          | 16   | 14     | 15     | 45    | 📉 |
+| 5️⃣ | Germany        | 13   | 12     | 13     | 38    | ➡️ |
 
-## Our Visualizations
-### Medal Distribution Trends
-![Figure 1: Linear Regression Results](images/Predicted_Medal_Boxplot.png)
-*Actual vs Predicted medal counts with y=x reference line*
+## Visual Summary
+<div align="center">
+  
+📊 Prediction Ranges | 🏅 Gold Trends | 📈 Error Analysis  
+:-------------------------:|:-------------------------:|:-------------------------:
+![Boxplot](Predicted_Medal_Boxplot.png) | ![Gold Trends](gold_medal_trends_top5.png) | ![MAPE Grid](history_evaluation_MAPE_grid.png)  
 
-### Model Performance
-![Figure 3: XGBoost vs Random Forest](images/model_comparison.png)
-*Gold medal prediction accuracy across models*
-
-### Historical Trends
-![Figure 7: Gold Medal Timeline](images/gold_medal_trends.png)
-*Top 5 countries' performance evolution (1900-2024)*
-
-### Prediction Intervals
-![Figure 6: Medal Range Prediction](images/medal_ranges.png)
-*95% confidence intervals for top nations*
+📊 Model Validation | 🏆 Top 20 Predictions  
+:-------------------------:|:-------------------------:
+![Validation](history_evaluation_True_vs_Pred.png) | ![Top 20](top20_median_predictions.png) 
+</div>
 
 ## Methodology
 ### Data Pipeline
